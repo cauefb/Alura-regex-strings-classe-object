@@ -111,6 +111,11 @@ namespace ByteBank.Modelos
 
             contaDestino.Depositar(valor);
         }
+
+        public override string ToString()
+        {
+            return $"Numero {Numero}, agência {Agencia}, Saldo {Saldo}";
+        }
     }
 
 }
